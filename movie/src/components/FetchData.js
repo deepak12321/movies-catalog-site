@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 
 const LINK = `http://www.omdbapi.com/?&apikey=77cc3623&s=`;
 
 
-const AppContext = React.createContext();
+const AppContext = createContext();
 const AppProvider = ({ children }) => {
 
 
@@ -31,6 +31,7 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         fetchMovie(LINK);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search]);
 
     return <AppContext.Provider value={{ movie, search, setSearch }}>

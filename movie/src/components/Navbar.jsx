@@ -1,4 +1,3 @@
-import React from 'react'
 import '../style/universal.css';
 import '../style/navbar.css';
 import { Link } from 'react-router-dom';

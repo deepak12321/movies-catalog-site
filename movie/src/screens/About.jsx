@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Details from '../components/Details';
 import Navbar from '../components/Navbar'
 import "../style/about.css";

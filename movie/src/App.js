@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 // import './style/app.css';
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./components/FetchData";
 import About from "./screens/About";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 // import { useLocation } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import "../style/desc.css";
@@ -13,7 +13,7 @@ const Desc = () => {
 
   const [info, setInfo] = useState([]);
 
-  const fetchURL = async () => {
+  const fetchURL = useCallback(async () => {
     try {
       const api = `https://www.omdbapi.com/?apikey=77cc3623&i=`;
       const res = await fetch(`${api}${data.id}`);
@@ -26,11 +26,11 @@ const Desc = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }, [data.id]);
 
   useEffect(() => {
     fetchURL();
-  }, [data.id]);
+  }, [fetchURL]);
 
   return (
     <>
@@ -49,7 +49,7 @@ const Desc = () => {
               <div className="img-name-div flex">
                 <img
                   src={info.Poster}
-                  alt="movie-img-desc"
+                  alt="movie_img_desc"
                   className="poster-img-desc"
                 />
                 <span className="name ">

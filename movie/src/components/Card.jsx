@@ -7,7 +7,7 @@ const Card = (prop) => {
 
         <NavLink to={`/movie/${prop.id}`}>
             <div className="main-card ">
-                <img src={prop.Poster} alt="No-image available" className="poster-img-card" id='card-img' />
+                <img src={prop.Poster} alt="No_image_available" className="poster-img-card" id='card-img' />
             </div>
         </NavLink>
     )
