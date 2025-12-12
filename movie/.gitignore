@@ -1,0 +1,3 @@
+node_modules
+/movies/.env
+package-lock.json

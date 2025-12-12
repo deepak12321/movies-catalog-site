@@ -20,14 +20,14 @@ const Accordian = (props) => {
             </div>
             <div className={`answer-div ${c}`}>
                 {
-                    props.data.map((details) => {
+                    props.data && Array.isArray(props.data) ? props.data.map((details) => {
                         return <div className="main-rating-div" key={details.Source}>
                             <div className="rating-div">
                                 <h5>{details.Source}</h5>
                                 <p>{details.Value}</p>
                             </div>
                         </div>
-                    })
+                    }) : <p>No ratings available</p>
 
                 }
             </div>

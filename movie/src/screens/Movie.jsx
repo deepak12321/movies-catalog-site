@@ -19,7 +19,7 @@ const Movie = () => {
 
             <div className="content-area-movie center">
                 {
-                    data.movie != undefined ?
+                    data.movie && data.movie.length > 0 ?
                         data.movie.map((movie) => {
                             let imdb = movie.imdbID;
                             return <Card Poster={movie.Poster} key={imdb} id={imdb} />
