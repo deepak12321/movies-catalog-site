@@ -1,6 +1,6 @@
 [build]
   base = "movie"
   command = "npm run build"
-  publish = "movie/build"
+  publish = "build"
 
 # Do NOT put secrets here. Keep OMDB_API_KEY in Netlify env settings.
