@@ -1,6 +1,6 @@
 import { useEffect, useState, createContext } from "react";
 
-const LINK = `http://www.omdbapi.com/?&apikey=77cc3623&s=`;
+const LINK = `https://www.omdbapi.com/?&apikey=77cc3623&s=`;
 
 
 const AppContext = createContext();
