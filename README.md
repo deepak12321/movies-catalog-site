@@ -2,9 +2,14 @@
 
 A modern, responsive web application to search, browse, and explore detailed information about movies using the OMDB API. Built with React and designed for movie enthusiasts.
 
+## 🌐 Live Demo
+
+**[🎬 View Live Site](https://wowmoviesoinfo.netlify.app/)** 
+
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-6.9.0-CA4245?style=flat&logo=react-router&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-1.13.2-5A29E4?style=flat&logo=axios&logoColor=white)
+![Deployed](https://img.shields.io/badge/Deployed-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
 ---
 
