@@ -41,7 +41,7 @@ A modern, responsive web application to search, browse, and explore detailed inf
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/movies-catalog-site.git
+   git clone https://github.com/deepak12321/movies-catalog-site.git
    cd movies-catalog-site/movie
    ```
 
